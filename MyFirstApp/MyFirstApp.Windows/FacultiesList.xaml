@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="MyFirstApp.FacultiesList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyFirstApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Gray">
+        <TextBlock Margin="10,335,1038,391" Tapped="Faculty2_Tapped">Alex Baby</TextBlock>
+        <Button Margin="-3,159,0,559" Height="50">Click on the Faculty to see Details</Button>
+        <TextBlock Tapped="Faculty1_Tapped" Margin="10,241,1095,472"> Thomas Sinclair</TextBlock>
+        <TextBlock Tapped="Faculty3_Tapped"  Margin="10,415,1007,292">John Smith</TextBlock>
+        <TextBlock Tapped="Faculty4_Tapped" Margin="10,483,992,220"> Dawn Vieira</TextBlock>
+        <Button x:Name="button" Content="MainPage" HorizontalAlignment="Left" Margin="7,608,0,0" VerticalAlignment="Top" Click="button_Click" Height="49"/>
+        <Image x:Name="Logo" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="498" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
+    </Grid>
+</Page>
