@@ -2,16 +2,19 @@
 	<head>
 	<title>Find a Contact</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="809493495811-eadtap65l31hpfle9qc281q7vmjrqm2m.apps.googleusercontent.com">
 <link rel="stylesheet" href="themes/rasmussenthemeroller.min.css" />
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="javascript/storage.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 	<body>
 		<div id="page" data-role="page" data-theme="b" >
 	<div data-role="header" data-theme="b">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <h1>
 	Find your contact
 		</h1>	</div>
