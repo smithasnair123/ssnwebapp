@@ -10,6 +10,39 @@
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="javascript/storage.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script>
+	var Notification = window.Notification || window.mozNotification || window.webkitNotification;
+
+	Notification.requestPermission(function (permission) {
+		// console.log(permission);
+	});
+
+	function show() {
+		window.setTimeout(function () {
+			var instance = new Notification("Module 05 notifications");
+
+			instance.onclick = function () {
+				// Something to do
+			};
+			instance.onerror = function () {
+				// Something to do
+			};
+			instance.onshow = function () {
+				// Something to do
+			};
+			instance.onclose = function () {
+				// Something to do
+			};
+		}, 1000);
+	}
+</script>
+
+<button type="button" onclick="show()">Notify me!</button>
+
+
+
+
 </head>
 	<body>
 		<div id="page" data-role="page" data-theme="b" >
